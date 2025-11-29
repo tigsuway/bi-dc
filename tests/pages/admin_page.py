@@ -14,6 +14,7 @@ class AdminPage(BasePage):
 
     def isAdminPage(self) -> None:
         """ Check if in Homepage """
+        self.wait_for_load_state()
         self.is_visible(self.manage_admin_toolbar_link)
 
 

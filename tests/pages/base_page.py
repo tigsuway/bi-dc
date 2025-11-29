@@ -92,4 +92,3 @@ class BasePage:
     def get_attribute(self, selector: str, attribute: str) -> Optional[str]:
         """Get attribute value of an element"""
         return self.page.locator(selector).get_attribute(attribute)
-

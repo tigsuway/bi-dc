@@ -6,7 +6,7 @@ Feature: Login
 
 
   Scenario: Valid user can login
-    When the user enters username as "Mello" with password "M3ll0m4r!123"
+    When the user enters admin credentials
     Then the user should be redirected to admin page
 
 
