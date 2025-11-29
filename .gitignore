@@ -1,0 +1,20 @@
+# Reports
+reports
+
+# .ini
+./pytest.ini
+
+# Python bytecode
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.pytest_cache/
+
+# Virtual environment
+venv/
+
+
+# Idea
+.idea
+
