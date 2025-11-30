@@ -2,7 +2,8 @@
 reports
 
 # .ini
-*.ini
+pytest.ini
+pytest_copy.ini
 
 # Python bytecode
 *.pyc

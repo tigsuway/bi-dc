@@ -7,6 +7,7 @@ from pytest_bdd import scenarios, given, when, then, parsers
 
 from tests.pages.admin_page import AdminPage
 from tests.pages.login_page import LoginPage
+from tests.utils.drupal_api import DrupalAPIUtils
 
 scenarios('../features/login.feature')
 
@@ -17,6 +18,20 @@ def user_on_login_page(login_page: LoginPage, base_url: str):
     """ Check if user is in login page """
     login_page.open(base_url)
     login_page.isLoginPage()
+
+
+@given(parsers.parse('the drupal content "{content}" has been created'))
+def create_drupal_content(drupal_api: DrupalAPIUtils, content: str):
+    # Create content
+    node = drupal_api.create_node(content_type=content)
+    uuid = node["data"]["id"]
+
+    print("Created UUID:", uuid)
+    return uuid
+
+    # Delete it
+    # drupal_api.delete_node(content, uuid)
+
 
 # When
 @when(parsers.parse('the user enters username as "{username}" with password "{password}"'))

@@ -1,0 +1,73 @@
+{
+  "article": {
+    "data": {
+      "type": "node--article",
+      "attributes": {
+        "title": "Created Article from Pytest",
+        "field_body": {
+          "value": "Proin ac sapien justo. Donec pellentesque fermentum diam, et dignissim magna ornare a. In suscipit, justo sed pharetra blandit, nisi felis iaculis ex, eget pretium neque quam id nunc. Suspendisse ac est nisl. Proin at nisi interdum arcu eleifend convallis vel vitae enim. Morbi blandit lectus eu ornare elementum. Nullam hendrerit diam elit, a interdum massa mattis ac. Suspendisse sed dignissim enim. Pellentesque lobortis nulla ac egestas tempor. Aenean eget blandit leo, eget varius velit. Mauris eleifend ultricies nisi, sit amet malesuada neque molestie eu. Aliquam nec hendrerit quam, eu accumsan ante. Donec vitae lorem quis sem vehicula finibus nec at urna. Nam sed justo diam. Pellentesque neque mi, volutpat et tellus a, sodales congue velit.",
+          "format": "basic_html"
+        }
+      }
+    }
+  },
+  "page": {
+    "data": {
+      "type": "node--page",
+      "attributes": {
+        "title": "Created Basic Page from Pytest",
+        "field_body": {
+          "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec faucibus diam. Nulla facilisi. Ut euismod a elit id semper. Integer blandit turpis quis mi lacinia elementum. Nulla nec orci rhoncus, dapibus erat eget, sollicitudin mauris. Ut auctor nibh eu erat lobortis tempor. Aenean eleifend semper quam ut dapibus. Quisque auctor ipsum non tempus mattis. Vestibulum suscipit nibh interdum eros maximus, sed pretium purus porta. Donec semper varius vulputate.",
+          "format": "basic_html"
+        }
+      }
+    }
+  },
+  "recipe": {
+    "data": {
+      "type": "node--recipe",
+      "attributes": {
+        "title": "Created Recipe from Pytest",
+        "field_preparation_time": 30,
+        "field_cooking_time": 60,
+        "field_number_of_servings": 3,
+        "field_difficulty": "medium",
+        "field_recipe_instruction": {
+          "value": "<p>Mix ingredients, bake at 180C.</p>",
+          "format": "basic_html"
+        },
+        "field_ingredients": "Flour, Eggs, Cocoa, Sugar",
+        "field_summary": {
+            "value": "Some summary text",
+            "format": "basic_html"
+        }
+      },
+      "relationships": {
+        "field_recipe_category": {
+          "data": {
+            "type": "taxonomy_term--recipe_category",
+            "id": "10219501-1a1a-4305-ac03-56650d45ed91"
+          }
+        },
+        "field_tags": {
+          "data": [
+            {
+              "type": "taxonomy_term--tags",
+              "id": "478266e2-c69a-4f6f-9106-c7d1d8299cfa"
+            },
+            {
+              "type": "taxonomy_term--tags",
+              "id": "044103f7-7672-4a16-ba28-5d4fd3c25d1c"
+            }
+          ]
+        },
+        "field_media_image": {
+          "data": {
+            "type": "media--image",
+            "id": "da7ace3b-f3e2-4820-b8d5-21fab973a4d4"
+          }
+        }
+      }
+    }
+  }
+}
